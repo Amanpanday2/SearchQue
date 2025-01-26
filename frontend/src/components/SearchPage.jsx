@@ -23,7 +23,7 @@ const SearchComponent = () => {
     }
     try {
       const response = await fetch(
-        `http://localhost:7453/search/get-allQuestions?title=${query}`,
+        `https://searchque-pro.onrender.com/search/get-allQuestions?title=${query}`,
         {
           method: "GET",
           headers: {
