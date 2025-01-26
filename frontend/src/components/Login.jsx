@@ -20,7 +20,7 @@ const LandingPage = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await fetch("http://localhost:7453/user/login", {
+      const res = await fetch("https://searchque-pro.onrender.com/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
