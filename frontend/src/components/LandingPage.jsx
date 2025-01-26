@@ -26,7 +26,7 @@ const LandingPage = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:7453/user/register", {
+      const res = await fetch("https://searchque-pro.onrender.com/user/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
