@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const SearchModel = require("../models/search.model");
+const SearchModel = require("../Models/search.model");
 
 const searchRouter = express.Router();
 
@@ -25,3 +25,4 @@ searchRouter.get("/get-allQuestions", async (req, res) => {
     });
   }
 });
+module.exports=searchRouter;

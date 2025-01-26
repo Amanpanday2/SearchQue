@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const BlacklistModel = require("../Models/blacklist.model");
-const UserModel = require("../models/user.model");
+const UserModel = require("../Models/user.model");
 const dotenv = require("dotenv").config();
 
 const Auth = async (req, res, next) => {
@@ -32,7 +32,7 @@ const Auth = async (req, res, next) => {
       if (!user) {
         return res.status(404).json({ message: "User not found" });
       }
-
+console.log(req);
       req.user = user;
       next();
     });
