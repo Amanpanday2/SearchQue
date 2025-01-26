@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const SearchModel = require("../Models/search.model");
+const SearchModel = require("../model/search.model");
 
 const searchRouter = express.Router();
 
